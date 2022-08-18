@@ -41,11 +41,11 @@ img{
     margin: 1.5% auto; 
 }
 img:hover{ 
-    width: 61%;
+    width: 62%;
     border: 5px solid black;
     outline: 5px solid #f0c400;
     transition: 0.2s;
-    margin: 1.2%;
+    margin: 0.9%;
 }
 section{
     background-color: #ffffff;
@@ -59,10 +59,13 @@ section h2,h3 {
     color: black;
     text-align: left;
 }
-
 ul{
     text-align: left;
 }
+span{
+    margin-left: 45%;
+}
+
 footer{
    background-color: black;
     padding: 20px;
