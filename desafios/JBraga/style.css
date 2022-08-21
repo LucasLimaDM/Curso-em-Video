@@ -4,10 +4,11 @@ header {
     font: normal bolder 1.3em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-bottom: 8px solid #222222;
     padding: 10px;
-    line-height: 40px;
+    line-height: 40px; 
 }
-header > p,h1 {
-    
+header > p {
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -26,14 +27,14 @@ h2 {
     
 }
 h3{
-    color: #f0c400;
+    color: #ffffff;
     text-align: left;
     margin: 20px;
     font: normal bolder 1.3em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 p{
     color: #ffffff;
-    margin: 20px;    
+    
 }
 img{ 
     width: 60%;
@@ -48,25 +49,29 @@ img:hover{
     margin: 0.9%;
 }
 section{
-    background-color: #fff9da;
+    background-color: #000000;
     -webkit-text-stroke: 0px black;
     width: 70%;
     margin: 30px auto 40px auto;
     border: 5px solid #f0c400;
     outline: 5px solid #1d1d1d;
     position: relative;
+    color: #ffffff;
 }
 section h3 {
-    color: black; 
+     
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     font-size:1.4em;
+}
+section p{
+    text-align: left;
 }
 ul{
     text-align: left;
     list-style-type:none;
     line-height: px;
-    margin: 40px;
+    margin: 0px;
     line-height: 40px;
 }
 span{
