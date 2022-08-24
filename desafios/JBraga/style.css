@@ -79,11 +79,10 @@ span{
     right: 6%;
 }
 a{
-    text-decoration: none;
     color: white;
 }
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     transition: 10s;
 }
 
