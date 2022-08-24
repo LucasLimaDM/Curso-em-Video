@@ -1,0 +1,26 @@
+body{
+    background-image: url(archives/musica800.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100vh;
+    background-color: black;
+    background-size: 100% 70%;
+}
+header{
+    background-color: black;
+    border-bottom: 5px solid gray;
+    color: whitesmoke;
+    font: normal bold 1.6em 
+}
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 10px;   
+}
+p{
+    color: whitesmoke;
+    font: normal normal 1.3em Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 10%;
+    margin-bottom: 100%;
+}
