@@ -1,26 +1,54 @@
 body{
-    background-image: url(archives/musica800.jpg);
     margin: 0px;
-    background-repeat: no-repeat;
-    background-position: left top;
-    height: 100vh;
-    background-color: black;
-    background-size: 100% 70%;
+    background-color: #222222;
+    
 }
 header{
-    background-color: black;
-    border-bottom: 5px solid gray;
-    color: whitesmoke;
-    font: normal bold 1.6em 
+    background-color: black ;
+    
+    color: #f0C400;
+    font: normal bold 1.4em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px; 
+    text-align: center;
 }
 h1{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px;
     padding: 10px;   
 }
 p{
     color: whitesmoke;
-    font: normal normal 1.3em Verdana, Geneva, Tahoma, sans-serif;
-    text-indent: 10%;
-    margin-bottom: 100%;
+    font: normal normal 1.6em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 80px 0px 350px 10%;
+    margin: 0px;
 }
+div{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 20px solid #222222;;  
+}
+#musica{
+    background-image: url(archives/musica800.jpg);
+}
+#restaurante {
+    background-image: url(archives/ristorant.jpg);
+    
+}
+#comida{
+    background-image: url(archives/comida2.jpg);
+    background-position: center center;
+}
+footer{
+    background-color: black;
+    padding: 25px;
+    border-top: 3px solid #202020;
+}
+footer p{
+    text-align: center;
+    font:normal bold 1em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
