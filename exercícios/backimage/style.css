@@ -22,25 +22,34 @@ p{
     margin: 0px;
 }
 div{
-    
+    /*
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 10px 0px 80px 0px; 
+   
+    background-attachment: fixed;
+   color image position repeat attachement*/ 
+    background:black center center no-repeat fixed;
+    margin: 10px 0px 80px 0px;
+    background-size: cover;
 }
 #musica{
     background-image: url(archives/musica800.jpg);
-    background-attachment: fixed;
+    
 }
 #restaurante {
     background-image: url(archives/ristorant.jpg);
-    background-attachment: fixed;
+    
 }
 #comida{
     background-image: url(archives/comida2.jpg);
     margin-bottom: 0px;
-    background-attachment: fixed;
+    
 
+}
+a{  
+    color: white;
+    text-decoration: underline;
 }
 footer{
     background-color: black;
