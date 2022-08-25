@@ -1,38 +1,45 @@
 body{
     margin: 0px;
     background-color: #222222;
-    
+    text-align: center;
+    color: whitesmoke;
+    font: normal normal 1.4em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+    
 header{
     background-color: black ;
     
     color: #f0C400;
-    font: normal bold 1.4em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: normal bold Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px; 
-    text-align: center;
+    
 }
 h1{
     margin: 0px;
     padding: 10px;   
 }
-p{
-    color: whitesmoke;
-    font: normal normal 1.6em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 80px 0px 350px 10%;
-    margin: 0px;
+ul{
+    text-align: left;
+    list-style: none;
+    position: relative;
+    text-indent: 6%;
+    padding: 0px;
 }
-div{
-    /*
+
+div{ 
+    background: center top no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-   
-    background-attachment: fixed;
-   color image position repeat attachement*/ 
-    background:black center center no-repeat fixed;
-    margin: 10px 0px 80px 0px;
-    background-size: cover;
+    height: 300px;
+    margin: 2px;
 }
+section{
+    border: 2px solid black;
+}
+span{
+    position:absolute;
+    right: 6%;
+}
+
 #musica{
     background-image: url(archives/musica800.jpg);
     
@@ -44,6 +51,7 @@ div{
 #comida{
     background-image: url(archives/comida2.jpg);
     margin-bottom: 0px;
+    height: 200px;
     
 
 }
@@ -53,12 +61,13 @@ a{
 }
 footer{
     background-color: black;
-    padding: 25px;
+    padding: 0px;
     margin: 0px;
+    
 }
 footer p{
     text-align: center;
-    font:normal bold 1em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font:normal bold 0.7em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
 }
