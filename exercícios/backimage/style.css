@@ -18,22 +18,24 @@ h1{
     margin: 0px;
     padding: 10px;   
 }
+h2,h3{
+    padding: 30px;
+}
 ul{
+    margin-top: 30px;
     text-align: left;
     list-style: none;
     position: relative;
     text-indent: 6%;
-    padding: 0px;
+    padding: 20px;
+    
 }
 
 div{ 
-    background: center top no-repeat fixed;
+    background:  no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     margin: 2px;
-}
-section{
-    border: 2px solid black;
 }
 span{
     position:absolute;
@@ -49,11 +51,13 @@ span{
     
 }
 #comida{
-    background-image: url(archives/comida2.jpg);
+    background: url(archives/comida2.jpg) no-repeat center center fixed; 
     margin-bottom: 0px;
-    height: 200px;
-    
-
+    height: 300px;
+    background-size: cover;
+}
+#petiscos{
+    background-image: url(archives/petiscos.jpg);
 }
 a{  
     color: white;
