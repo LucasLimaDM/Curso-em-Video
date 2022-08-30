@@ -28,7 +28,8 @@ a{
 li{
     text-align: left;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
+    margin-left: 8vw;
 }
 span{
     position:absolute;
@@ -40,7 +41,6 @@ span{
     max-width: 1000px;
     margin: auto;
     background-position: center center;
-    
 }
 .cardapio{
     height:300px;
@@ -75,4 +75,3 @@ footer{
     background-color: black;
     font-weight: bold;
 }
-
