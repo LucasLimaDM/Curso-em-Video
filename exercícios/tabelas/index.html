@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        
+        body{
+            text-align: center;
+            background-color: rgb(95, 79, 185);
+        }
+        td,th{
+            border: 2px solid black;
+            height: 60px;
+            width: 130px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            background-color: white;
+        }
+        thead, tfoot{
+            background-color: gray;
+            font-weight: bold;
+        }
+        caption{
+            font: normal bold 1.2em Cambria,Cochin,serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+    <caption>Total das localidades e digitos dos clientes</caption>
+    <thead>
+        <tr>
+            <th>Nome
+            <th>Estado
+            <th>Numero
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>João
+            <td>AL</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Julio
+            <td>PE</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Pedro
+            <td>RJ</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
