@@ -24,11 +24,16 @@
             background-color: white;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(82, 82, 82);
             font-weight: bold;
+            color: white;
         }
         caption{
             font: normal bold 1.2em Cambria,Cochin,serif;
+        }
+        tbody > tr:nth-child(2n-1
+        ){
+            background-color: rgb(173, 173, 173);
         }
         
     </style>
@@ -39,9 +44,9 @@
     <caption>Total das localidades e digitos dos clientes</caption>
     <thead>
         <tr>
-            <th>Nome
-            <th>Estado
-            <th>Numero
+            <th scope="col">Nome
+            <th scope="col">Estado
+            <th scope="col">Numero
         </tr>
     </thead>
     <tbody>
@@ -60,12 +65,17 @@
             <td>RJ</td>
             <td>3</td>
         </tr>
+        <tr>
+            <td>Augusto
+            <td>RJ</td>
+            <td>4</td>
+        </tr>
     </tbody>
     <tfoot>
         <tr>
-            <td>Total
+            <th scope="row">Total
             <td>3</td>
-            <td>3</td>
+            <td>4</td>
         </tr>
     </tfoot>
 </table>
