@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    background-color: beige;
+}
+#telefone{
+    background-image: url(archives/frame-iphone.png);
+    width: 311px;
+    height: 625px;
+    margin: 20px auto;
+}
+#tela{
+    position: absolute;
+    transform: translate(-50%, -16%);
+    left: 50%;
+    top: 30%;
+    width: 268px;
+    height: 470px;
+}
