@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            background: black url(archives/tela-home.jpg) top no-repeat ;
+            background: black url(archives/tela-home.jpg) no-repeat top center;
             background-size: cover;
+        }
+        input{
+            background: red url(archives/logo-youtube.jpg) no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="button" value="" name="yt" onclick="youtube()">
+    <script>
+        function youtube() {
+  
+            window.open('https://www.youtube.com')
+        }
+    </script>
 </body>
 </html>
