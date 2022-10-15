@@ -15,15 +15,22 @@
             width: 50px;
             height: 50px;
         }
+        #tt{
+            background: red url(archives/logo-twitter.jpg) no-repeat;
+            background-size: cover;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
-    <input type="button" value="" name="yt" onclick="youtube()">
+    <input id="yt" type="button" value="" name="yt" onclick="youtube()">
+    <input id="tt" type="button" value="" onclick="twitter()">
     <script>
         function youtube() {
-  
-            window.open('https://www.youtube.com')
+            window.open('https://www.cursoemvideocom' , 'tela')
+        }
+        function twitter() {
+            window.open('https://twitter.com', 'tela')
         }
     </script>
 </body>

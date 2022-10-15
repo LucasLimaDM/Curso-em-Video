@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: background-color 0.5s;
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+ 
+}
+div{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+#inst:hover{
+    background-color: #dd2a7b;
+}
+#wpp:hover{
+    background-color: #0f980d;
+}
+#mail:hover{
+    background-color: rgb(215, 25, 25);
+}
+#tt:hover{
+    background-color: rgb(14, 128, 163);
+}
+#fb:hover{
+    background-color: blue;
+}
+#reta{
+    position: relative;
+    top:20%;
+    height: 5px;
+    width: 75px;
+    background-color: rgb(255, 0, 43);
+    border-radius: 0%;
+    display: block;
+}
