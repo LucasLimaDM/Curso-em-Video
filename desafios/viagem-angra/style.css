@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #131315;
+    min-height: 100vh;
+    text-align: center;
+   
+}
+h1, h2{
+    color: whitesmoke;
+    padding: 30px;
+    font-size: 2em;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(45deg, #2929df, #c01919, #2929df);
+    background-size: 500%, 500%;
+    background-position: 10% 10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-position 3s;
+}
+.circle:hover{
+    background-position: 100% 100%;
+}
+.zap{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position: fixed;
+    left: 1%;
+    top: 50%;
+}
+.linguiça{
+    background-color: #131315;
+    height: 900px;
+    width: 200px;
+    display: flex;
+}
