@@ -2,4 +2,60 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    transition: transform 2s, height 2s;
 }
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1{
+    padding: 30px;
+    
+}
+ion-icon{
+    padding: 5px;
+    transform: scale(1.6);
+    color: white;
+}
+.menu{
+   
+    position: fixed;
+    top: 0%;
+    left: 97%;
+    transform: translate(-100%,0%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin:30px;
+    background-color: #d83656;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.menu:hover{
+    height: 80vh;
+
+}
+.menu:hover ul{
+    display: block;
+
+}
+ul{
+    display: none;
+    list-style: none;
+    margin: 10px;
+    
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+ul a:visited{
+    color: white;
+}
+
