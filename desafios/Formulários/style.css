@@ -10,18 +10,44 @@ header{
     justify-content: flex-start;
     align-items: center;
 }
+/* Configs gerais */
 a{
     color: white;
     text-decoration: none;
     padding:20px 0px 0px 10px
 }
+h1,h2{
+    margin: 20px;
+}
+h4{
+    font-size: 1.5em;
+    text-align: center;
+}
+p{
+    width: 400px;
+    text-align: left;  
+}
+img{
+    height: 320px;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.214);
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+fieldset{
+    width: 80vw;
+}
+label{
+    margin: 10px;
+}
+
+/* menu */
 .menu{
     position: fixed;
     right:0px;
     top: 0%;
     gap: 10px;
-    
-    
     background-color: rgb(199, 41, 41);
     display: flex;
     flex-flow:column nowrap;
@@ -41,33 +67,13 @@ a{
     left: 30px;
     transition: 1s;
 }
-h1,h2{
-    margin: 20px;
-}
-p{
-    width: 400px;
-    text-align: left;  
-}
-section{
-    
+#mainprincipal{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
-img{
-    height: 320px;
-    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.214);
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-    border-radius: 10px;
-
-}
-h4{
-    font-size: 1.5em;
-    text-align: center;
-}
+/* Login */
 .box-login{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.371);
     border-radius: 20px;
@@ -79,6 +85,7 @@ h4{
     left: 50%;
     transform: translate(-50%, 0%);
 }
+/* formulário */
 form{
     padding-top: 30px;
     display: flex;
@@ -86,8 +93,11 @@ form{
     align-items: center;
     gap: 30px;
 }
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
     border: 1px solid rgb(150, 150, 150);
     border-radius: 8px;
 }
+/* Cadastro */
+
+
 
