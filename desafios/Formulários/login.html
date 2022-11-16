@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Formulários</title>
 </head>
 <body>
+    <!-- menu -->
+    <div class="menu">     
+        <a href="index.html"><i class="bi bi-house-fill"></i><span>Home</span></a>
+       <a href="login.html"> <i class="bi bi-arrow-right-square"></i><span>Login</span></a>
+        <a href="cadastro.html"><i class="bi bi-plus-square"></i><span>Cadastro</span></a>
+        <a href="loja.html"><i class="bi bi-bag"></i><span>Loja</span></a>
+    </div>
+    <!-- box login -->
     <header>
-        <div id="logo"><h1>Lubi</h1></div>
-        <div class="fas fa-bars"></div>
+        <h1>Lubi</h1>
     </header>
-
-
-    
-</body>
-</html>
+    <div class="box-login">
+        <h4>Login</h3>
+        <form action="login.php" method="post">
+            <input type="text" placeholder=" Usuário" minlength="6" id="username">
+            <input type="password" name="password" id="password" placeholder=" Senha" minlength="6">
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
