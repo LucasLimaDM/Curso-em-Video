@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002</title>
+    
+    <style>
+        #Mcasa{
+            background-color: wheat;
+            width: 50vw;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <h1 id="t1">Ex002</h1>
+    <p id="p1" >Pogramasaum</p>
+    <div id="Mcasa"> Casa do José, não entre</div>
+    
+    
+    
+    <script>    
+        var p1 = document.getElementById('p1')
+        
+        var t1 = document.getElementById('t1')
+        var casa = document.getElementById('Mcasa')
+        n = window.prompt('Quer invadir a casa do José?')
+        if (n=='sim') {
+            p1.innerText = 'Casa do josé'
+            
+            t1.innerText = 'Entra vai'
+            
+            casa.addEventListener('click', clicar)
+            casa.addEventListener('mouseenter', entrar)
+            casa.addEventListener('mouseout', sair)
+
+        }
+        else if (n=='não') {
+            t1.innerText = 'Ah é?'
+            p1.innerText = 'Beleza então'
+            casa.style.display = 'none'
+            }
+            else {
+            t1.innerText = '?'
+            p1.innerText = 'Escreve de outro jeito que eu entendi foi nada'
+            casa.style.display = 'none'
+        }
+        function clicar() {
+            casa.innerText = 'PARA COM ISSO, SAI'
+            casa.style.backgroundColor = 'red'
+            casa.style.fontSize = '2em'
+            casa.style.fontWeight = 'bolder'
+        }
+        function entrar() {
+            casa.innerText = 'Ei, o que você ta fazendo? Sai logo daqui'
+            casa.style.backgroundColor= 'orange'
+            casa.style.fontSize = '1.5em'
+            casa.style.fontWeight = 'bold'
+        }
+        function sair() {
+            casa.innerText = 'Isso, fica longe'
+            casa.style.backgroundColor= 'green'
+            casa.style.fontSize = '1em'
+            casa.style.fontWeight = 'bold'
+        }
+        //onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+    </script>
+
+</body>
+</html>

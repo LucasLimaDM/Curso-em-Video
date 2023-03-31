@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font: normal bold 1em arial;
+            background-image: linear-gradient(to right, rgb(6, 6, 174), #67127C 60%);
+            text-align: center;
+        }
+        #central{
+            background-color: white;
+            width: 40vw;
+            height: 50vh;
+            margin: auto;
+            border-radius: 30px;
+            box-shadow: 2px 2px 2px;
+        }
+        #tit1{
+            padding: 10px;
+        }
+        
+    </style>
+    <title>Teste ifs</title>
+</head>
+<body>
+    <div id="central">
+        <h1 id="tit1">Sistema de multas</h1>
+        <p id="p1">insira a velocidade do carro:</p>
+        <input type="text" name="txtvel" id="textvel">
+        <input type="button" value="enviar" onclick="testar()" >
+    </div>
+    <div id="central">
+        <h1 id="tit2">Sistema de votos</h1>
+        <p id="p2">insira a idade:</p>
+        <input type="text" name="txtvel" id="idade">
+        <input type="button" value="enviar" onclick="votar()" >
+    </div>
+    <script>
+        var tit1 = document.getElementById('tit1')
+        var p1 = document.getElementById('p1')
+        var empty = document.getElementById('empty')
+        function testar() {
+            var vel = Number(document.getElementById('textvel').value)
+            p1.innerText = (`a velocidade do carro é: ${vel} km/h`)
+            if (vel > 60) {
+                p1.innerHTML += (`<br> VOCÊ FOI MULTADO POR ULTRAPASSAR 60 KM/H`)    
+            }
+        }
+        function votar() {
+            var idade = document.getElementById('idade').value
+            if (idade >= 18) {
+                if (idade > 65) {
+                    p2.innerHTML = ('voto opcional')
+                if (idade > 100) {
+                        p2.innerHTML += ('<br> mas tu tem mais de 100 anos??')
+                    }
+                }
+               else {
+                p2.innerHTML = ('voto obrigatório')
+               }
+            } 
+            else if (idade < 18 && idade >= 16) {
+                p2.innerHTML = ('voto opcional')
+            }
+            else {
+                p2.innerHTML = ('não vota')
+            }
+        }
+    </script>
+</body>
+</html>

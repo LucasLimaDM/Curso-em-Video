@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do José</title>
+
+    <style>
+        #casa{
+            background-color: wheat;
+            height: 350px;
+            width: 300px;
+            text-align: center;
+            margin: 30px;
+            display: none;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body> 
+    <h1>Casa do José 2.0</h1>
+    <input type="button" value="Invadir" onclick="invadir()">
+    <input type="button" value="sair da casa" onclick="saircasa()">
+    <div id="casa">Casa do José</div>
+    <script>
+        var casa = document.getElementById('casa')
+        casa.addEventListener('click', mouseclicar)
+        casa.addEventListener('mouseenter', mouseentrar)
+        casa.addEventListener('mouseout', mousesair)        
+        function invadir() {
+            casa.style.display='block'
+        }
+        function mouseclicar() {
+            casa.innerText = 'PARA COM ISSO, SAI'
+            casa.style.backgroundColor = 'red'
+            casa.style.fontSize = '2em'
+            casa.style.fontWeight = 'bolder'
+        }
+        function mouseentrar() {
+            casa.innerText = 'Ei, o que você ta fazendo? Sai logo daqui'
+            casa.style.backgroundColor= 'orange'
+            casa.style.fontSize = '1.5em'
+            casa.style.fontWeight = 'bold'
+        }
+        function mousesair() {
+            casa.innerText = 'Isso, fica longe'
+            casa.style.backgroundColor= 'green'
+            casa.style.fontSize = '1em'
+            casa.style.fontWeight = 'bold'
+        }
+        function saircasa(){
+            casa.style.display='none'
+        }
+    </script>
+    <h1>Somatório</h1>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <div id="resp"></div>
+    <script>
+        
+       function somar() {
+	 
+     var num1 = Number(document.getElementById('num2').value)
+     var num2 = Number(document.getElementById('num1').value)
+     var resp = document.getElementById('resp')
+     var result = num1 + num2
+     resp.innerText= `a soma entre ${num1} e ${num2} é ${result}`
+}       
+    </script>
+    <h1>Calculadora</h1>
+    <input type="button" value="1" onclick="n1()" >
+    <input type="button" value="2"onclick="n2()" >
+    <input type="button" value="3"onclick="n3()">
+    <input type="button" value="4"onclick="n4()">
+    <input type="button" value="5"onclick="n5()">
+    <input type="button" value="6"onclick="n6()">
+    <input type="button" value="7"onclick="n7()">
+    <input type="button" value="8"onclick="n8()">
+    <input type="button" value="9"onclick="n9()">
+    <input type="button" value="0"onclick="n0()">
+    <input type="button" value="+"onclick="nplus()">
+    <input type="button" value="-"onclick="nminus()">
+    <input type="button" value="x"onclick="nx()">
+    <input type="button" value="/"onclick="nD()">
+    <div id="respostatela"></div>
+    <script>
+        var tela = 0
+        var respostatela = document.getElementById('respostatela')
+        
+    function n1() {
+        var numero1 = 1
+        tela = numero1
+        respostatela.innerText = tela
+
+    }
+    function n2(){
+        var numero1 = 2
+        tela = numero1
+        respostatela.innerText = tela
+
+    }function n3(){
+        var numero1 = 3
+        tela = numero1
+        respostatela.innerText = tela
+
+    }function n4(){
+        var numero1 = 4
+        tela = numero1
+        respostatela.innerText = tela
+
+    }function n5(){
+        var numero1 = 5
+        tela = numero1
+        respostatela.innerText = tela
+
+    }function n6(){
+        var numero1 = 6
+        tela = numero1
+        respostatela.innerText = tela
+
+    }function n7(){
+        var numero1 = 7
+
+    }function n8(){
+        var numero1 = 8
+
+    }function n9(){
+        var numero1 = 9
+
+    }function n0(){
+        var numero1 = 0
+
+    }
+
+</script>
+</body>
+</html>

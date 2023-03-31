@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript!</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá mundo!</h1>
+    <p id="tit1">Curdinho de javascript</p>
+    <p>Converter para number <br> Number() <br>Converter para string <br> String()</p>
+    <h2>Resultados</h2>
+    <script>
+    var numero1 = Number(window.prompt('Digite um numero ')) 
+    var numero2 = Number(window.prompt('Digite outro numero '))
+    var result = numero1 + numero2
+    var nome = String(window.prompt('Qual o seu nome?'))
+    document.write(`a soma entre ${numero1.toFixed(2).replace('.',',') } reais e ${numero2.toFixed(2).replace('.',',' )} reais é ${result.toFixed(2).replace('.',',' )} <br>`)
+    document.write(`seu nome em maiusculas é: ${nome.toUpperCase()}<br>`)
+    document.write(`seu nome em minusculas é: ${nome.toLowerCase()}<br>`)
+    var lucas = window.document.getElementById('tit1')
+    lucas.innerText='amooo'
+
+    </script>
+</body>
+</html>
